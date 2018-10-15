@@ -7,3 +7,4 @@ npm run start
 ```
 
 ## Preview
+![Preview](http://url/to/img.png)
