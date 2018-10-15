@@ -7,4 +7,4 @@ npm run start
 ```
 
 ## Preview
-![Preview](http://url/to/img.png)
+![Preview](https://github.com/disissid/React-Chart-Builder/blob/master/dev/img/preview.png)
