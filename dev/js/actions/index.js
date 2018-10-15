@@ -1,7 +1,15 @@
-export const selectUser = (user) => {
-    console.log("You clicked on user: ", user.first);
+export const addChart = (chartData) => {
     return {
-        type: 'USER_SELECTED',
-        payload: user
+        type: 'ADD_CHART',
+        payload: chartData
+    }
+};
+
+export const editChart = (chartData, key) => {
+    return {
+        type: 'EDIT_CHART',
+        payload: {
+          chartData,
+          key }
     }
 };

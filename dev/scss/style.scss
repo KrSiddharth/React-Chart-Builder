@@ -1,5 +1,173 @@
-$primary: #006699;
+$primary: #64B6A4;
 
-h2 {
+body {
+	font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+
+header {
+	text-align: center;
+	margin: 20px;
+}
+
+button {
+		border: 2px solid $primary;
+    padding: 10px 20px;
+    font-size: 16px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    color: $primary;
+		cursor: pointer;
+}
+
+button.fixed {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 90;
+}
+
+button:focus {
+	outline: none;
+}
+
+select {
+	border: none;
+	border-radius: 0;
+	height: 30px;
+	width: 20%;
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+input[type='text'].styledInput {
+	border: none;
+	border-bottom: 2px solid grey;
+	font-size: 16px;
+	height: 30px;
+	width: 60%;
+	display:block;
+	margin-bottom: 20px;
+}
+
+input.styledInput:focus {
+	border-bottom: 2px solid $primary;
+	outline: none;
+}
+
+.react-grid-item {
+	border: 2px solid $primary;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.pMd {
+	padding: 10px;
+}
+
+div.showOverlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.6;
+	display: block;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 100;
+}
+
+div.overflowHidden {
+	overflow: hidden;
+}
+
+div.showModal {
+	position: fixed;
+	z-index: 100;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	overflow: scroll;
+	background: #fff;
+	border: 3px solid #64B6A4;
+	padding: 20px;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+	border-radius: 5px;
+}
+
+div.hidden {
+	display: none;
+}
+
+.mxMd {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+div.flexBox {
+	display: flex;
+}
+
+div.halfWidth {
+	width: 50%;
+}
+
+table {
+    border-collapse: collapse;
+		margin: 10px 0;
+}
+
+table, th, td {
+  border: 1px solid grey;
+}
+
+td {
+	padding: 5px;
+	font-size: 15px;
+	min-width: 50px;
+}
+
+table input {
+	border: none;
+	font-size: 15px;
+}
+
+.alignCenter {
+	text-align: center;
+}
+
+table input:focus {
+	border: none;
+	outline: none;
+}
+
+.mLg {
+	margin: 20px;
+}
+
+.edit-icon {
+	position: absolute;
+	top: 10px;
+	right: 10px;
 	color: $primary;
+}
+
+
+svg {
+	color: $primary;
+	fill: currentColor;
+	vertical-align: middle;
+}
+
+span.title {
+	color: #64B6A4;
+	font-size: 25px;
+	font-weight: 200;
+}
+
+.edit-icon svg {
+	cursor: pointer;
 }
